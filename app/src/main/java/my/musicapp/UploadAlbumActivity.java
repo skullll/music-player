@@ -149,7 +149,7 @@ public class UploadAlbumActivity extends AppCompatActivity implements AdapterVie
             });
         }else{
 
-            Toast.makeText(UploadAlbumActivity.this,"select album image", Toast.LENGTH_SHORT).show();
+            Toast.makeText(UploadAlbumActivity.this,"Select album image", Toast.LENGTH_SHORT).show();
         }
     }
 
