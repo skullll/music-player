@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadSongsActivity"
+    android:padding="10dp"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Choose Category:"
+        android:layout_marginBottom="5dp"></TextView>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner">
+    </Spinner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Upload song "
+            android:onClick="openAudioFiles"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            android:id="@+id/openaudiofile"></Button>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:text="no file selected"
+            android:id="@+id/textviewsongfileselect"></TextView>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:hint="Title"
+            android:background="@drawable/inputs"
+            android:padding="3dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/album"
+            android:hint="Album"
+            android:background="@drawable/inputs"
+            android:padding="3dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/artist"
+            android:layout_margin="5dp"
+            android:hint="Artist"
+            android:background="@drawable/inputs"
+            android:padding="3dp"
+            android:textColor="@color/black"></EditText>
+
+
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/duration"-->
+<!--            android:text="Duration"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/white"></EditText>-->
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/Progressbar"
+        android:layout_marginTop="10dp"></ProgressBar>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/uploadbutton"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:textColor="@color/white"
+        android:onClick="uploadfiletofirebase"
+        android:text="upload"></Button>
+
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/openimgeupload"
+        android:onClick="Uploadalbumact"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        android:text="open upload album"></Button>
+
+</LinearLayout>
