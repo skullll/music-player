@@ -144,7 +144,7 @@ public class UploadAlbumActivity extends AppCompatActivity implements AdapterVie
                 @Override
                 public void onProgress(@NonNull UploadTask.TaskSnapshot snapshot) {
                     double progress = (100.0 + snapshot.getBytesTransferred())/snapshot.getTotalByteCount();
-                    progressDialog.setMessage("Uploaded" + ((int)progress)+"%....");
+                    progressDialog.setMessage("Uploaded" + ((int)progress)+"%.....");
                 }
             });
         }else{
